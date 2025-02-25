@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            uint age = 27;
+            string name = "Aleksey";
+            float horsePower = 4.3f;
+            bool isOpen = true;
+            int money = 300;
+            long particlesCount = 56;
+            int airTemperature = -2;
+            bool canPay = false;
+            char space = ' ';
+            string horoscopeSign = "Aries";
+        }
+    }
+}
