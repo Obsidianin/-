@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int PicturesInRow = 3;
+
+            int pictures = 52;
+            int rowPictures;
+            int extraPictures;
+
+            extraPictures = pictures % PicturesInRow;
+            rowPictures = pictures / PicturesInRow;
+
+            Console.WriteLine($"Можно вывести {rowPictures} заполненых рядов. {extraPictures} картинка будет сверх меры.");
+            Console.ReadKey();
+        }
+    }
+}
