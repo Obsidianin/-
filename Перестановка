@@ -1,0 +1,23 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string Name = "Королев";
+            string Surname = "Алексей";
+            string Swap;
+
+            Console.WriteLine($"Данные не верные, перепутанные: Имя {Name}, Фамилия {Surname}.");
+
+            Swap = Surname;
+            Surname = Name;
+            Name = Swap;
+
+            Console.WriteLine($"Корректные данные: Имя {Name}, Фамилия {Surname}");
+            Console.ReadKey();
+        }
+    }
+}
