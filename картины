@@ -6,15 +6,15 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            int PicturesInRow = 3;
-            int Pictures = 52;
-            int FilledRows;
-            int ExtraPictures;
+            int picturesInRow = 3;
+            int pictures = 52;
+            int filledRows;
+            int extraPictures;
 
-            ExtraPictures = Pictures % PicturesInRow;
-            FilledRows = Pictures / PicturesInRow;
+            extraPictures = pictures % picturesInRow;
+            filledRows = pictures / picturesInRow;
 
-            Console.WriteLine($"Можно вывести {FilledRows} заполненых рядов. {ExtraPictures} картинка будет сверх меры.");
+            Console.WriteLine($"Можно вывести {filledRows} заполненых рядов. {extraPictures} картинка будет сверх меры.");
             Console.ReadKey();
         }
     }
