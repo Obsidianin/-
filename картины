@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
@@ -11,15 +7,14 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             int PicturesInRow = 3;
+            int Pictures = 52;
+            int FilledRow;
+            int ExtraPictures;
 
-            int pictures = 52;
-            int rowPictures;
-            int extraPictures;
+            ExtraPictures = Pictures % PicturesInRow;
+            FilledRow = Pictures / PicturesInRow;
 
-            extraPictures = pictures % PicturesInRow;
-            rowPictures = pictures / PicturesInRow;
-
-            Console.WriteLine($"Можно вывести {rowPictures} заполненых рядов. {extraPictures} картинка будет сверх меры.");
+            Console.WriteLine($"Можно вывести {FilledRow} заполненых рядов. {extraPictures} картинка будет сверх меры.");
             Console.ReadKey();
         }
     }
