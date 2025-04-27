@@ -6,17 +6,17 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            string Name = "Королев";
-            string Surname = "Алексей";
-            string Swap;
+            string name = "Королев";
+            string surname = "Алексей";
+            string swap;
 
-            Console.WriteLine($"Данные не верные, перепутанные: Имя {Name}, Фамилия {Surname}.");
+            Console.WriteLine($"Данные не верные, перепутанные: Имя {name}, Фамилия {surname}.");
 
-            Swap = Surname;
-            Surname = Name;
-            Name = Swap;
+            Swap = surname;
+            Surname = name;
+            Name = swap;
 
-            Console.WriteLine($"Корректные данные: Имя {Name}, Фамилия {Surname}");
+            Console.WriteLine($"Корректные данные: Имя {name}, Фамилия {surname}");
             Console.ReadKey();
         }
     }
