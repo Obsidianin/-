@@ -8,13 +8,13 @@ namespace ConsoleApp2
         {
             string name = "Королев";
             string surname = "Алексей";
-            string swap;
+            string temporaryStorage;
 
             Console.WriteLine($"Данные не верные, перепутанные: Имя {name}, Фамилия {surname}.");
 
-            Swap = surname;
+            temporaryStorage = surname;
             Surname = name;
-            Name = swap;
+            Name = temporaryStorage;
 
             Console.WriteLine($"Корректные данные: Имя {name}, Фамилия {surname}");
             Console.ReadKey();
