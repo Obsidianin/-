@@ -8,13 +8,13 @@ namespace ConsoleApp2
         {
             int PicturesInRow = 3;
             int Pictures = 52;
-            int FilledRow;
+            int FilledRows;
             int ExtraPictures;
 
             ExtraPictures = Pictures % PicturesInRow;
-            FilledRow = Pictures / PicturesInRow;
+            FilledRows = Pictures / PicturesInRow;
 
-            Console.WriteLine($"Можно вывести {FilledRow} заполненых рядов. {extraPictures} картинка будет сверх меры.");
+            Console.WriteLine($"Можно вывести {FilledRows} заполненых рядов. {ExtraPictures} картинка будет сверх меры.");
             Console.ReadKey();
         }
     }
