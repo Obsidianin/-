@@ -1,0 +1,29 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool enoughGold;
+            int crystalPrice = 2;
+
+            Console.WriteLine("Добро пожаловать в магазин кристалов! " +
+                "\nВведите начальное количество золота:");
+
+            int gold = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Цена за кристал 2 золотых," +
+                "Сколько кристаллов вы хотите купить");
+
+            int crystalCount = int.Parse(Console.ReadLine());
+
+            enoughGold = gold >= crystalCount * crystalPrice;
+            crystalCount *= Convert.ToInt32(enoughGold);
+            gold -= crystalCount * crystalPrice;
+
+            Console.WriteLine($"У вас осталось золота {gold} и кристаллов {crystalCount}");
+        }
+    }
+}
