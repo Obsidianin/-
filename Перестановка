@@ -13,8 +13,8 @@ namespace ConsoleApp2
             Console.WriteLine($"Данные не верные, перепутанные: Имя {name}, Фамилия {surname}.");
 
             temporaryStorage = surname;
-            Surname = name;
-            Name = temporaryStorage;
+            surname = name;
+            name = temporaryStorage;
 
             Console.WriteLine($"Корректные данные: Имя {name}, Фамилия {surname}");
             Console.ReadKey();
