@@ -6,24 +6,25 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            bool enoughGold;
-            int crystalPrice = 2;
+            int money;
+            int crystal;
+            int crystalUnitPrice = 2;
+            bool isAbleToPay;
 
-            Console.WriteLine("Добро пожаловать в магазин кристалов! " +
-                "\nВведите начальное количество золота:");
+            Console.WriteLine("Добро пожаловать в магазин! Сегодля кристалы по " + crystalUnitPrice + " монеты.");
+            Console.WriteLine("Сколько у вас монет?");
 
-            int gold = int.Parse(Console.ReadLine());
+            money = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Цена за кристал 2 золотых," +
-                "Сколько кристаллов вы хотите купить");
+            Console.WriteLine("Сколько кристалов нужно?");
 
-            int crystalCount = int.Parse(Console.ReadLine());
+            crystal = Convert.ToInt32(Console.ReadLine());
 
-            enoughGold = gold >= crystalCount * crystalPrice;
-            crystalCount *= Convert.ToInt32(enoughGold);
-            gold -= crystalCount * crystalPrice;
+            isAbleToPay = money >= crystal * crystalUnitPrice;
+            crystal *= Convert.ToInt32(isAbleToPay);
+            money -= crystal * crystalUnitPrice;
 
-            Console.WriteLine($"У вас осталось золота {gold} и кристаллов {crystalCount}");
+            Console.WriteLine($"У вас в сумке {crystal} кристалов, и {money} монет.");
         }
     }
 }
